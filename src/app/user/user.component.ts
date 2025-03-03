@@ -12,4 +12,13 @@ const randomUser = Math.floor(Math.random() * DUMMY_USERS.length);
 })
 export class AppUser{
     selectedUser = DUMMY_USERS[randomUser];
+
+    get userImagePath(){
+        return 'assets/users/' + this.selectedUser.avatar;
+    }
+
+    onSelectUser(){
+        const randomUser = Math.floor(Math.random() * DUMMY_USERS.length);
+        this.selectedUser = DUMMY_USERS[randomUser];
+    }
 }
