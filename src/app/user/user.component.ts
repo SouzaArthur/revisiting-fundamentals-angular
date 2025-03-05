@@ -18,6 +18,7 @@ export class AppUser{
     get userImagePath(){
         return 'assets/users/' + this.avatar
     }
+    
 
     onSelectUser(){
     }
