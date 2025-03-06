@@ -12,18 +12,12 @@ const randomUser = Math.floor(Math.random() * DUMMY_USERS.length);
     standalone: true
 })
 export class AppUser{
-    // @Input({required: true}) avatar!: string;
-    // @Input({required: true}) name!: string;
+    @Input({required: true}) avatar!: string;
+    @Input({required: true}) name!: string;
 
-    // get userImagePath(){
-    //     return 'assets/users/' + this.avatar
-    // }
-
-    avatar = input.required<string>();
-    name = input.required<string>();
-
-    userImagePath = computed(() => 'assets/users/' + this.avatar());
-    
+    get userImagePath(){
+        return 'assets/users/' + this.avatar
+    }
 
     onSelectUser(){
     }
