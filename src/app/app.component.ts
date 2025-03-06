@@ -6,7 +6,7 @@ import { DUMMY_USERS } from './dummy-users';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AppHeader, AppUser],
+  imports: [AppHeader, AppUser],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
