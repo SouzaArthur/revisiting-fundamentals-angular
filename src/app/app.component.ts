@@ -13,4 +13,8 @@ import { DUMMY_USERS } from './dummy-users';
 export class AppComponent {
   title = 'back-to-angular';
   dummyUsers = DUMMY_USERS;
+
+  userSelected(id: string){
+    console.log("selected id: " + id); 
+  }
 }

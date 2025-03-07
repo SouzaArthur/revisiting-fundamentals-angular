@@ -1,18 +1,38 @@
 <app-header></app-header>
 
 <main>
-    <ul id="users">
-        <li>
-            <app-user [avatar]="dummyUsers[0].avatar" [name]="dummyUsers[0].name"></app-user>
-        </li>
-        <li>
-            <app-user [avatar]="dummyUsers[1].avatar" [name]="dummyUsers[1].name"></app-user>
-        </li>
-        <li>
-            <app-user [avatar]="dummyUsers[2].avatar" [name]="dummyUsers[2].name"></app-user>
-        </li>
-        <li>
-            <app-user [avatar]="dummyUsers[3].avatar" [name]="dummyUsers[3].name"></app-user>
-        </li>
-    </ul>
+  <ul id="users">
+    <li>
+      <app-user
+        [id]="dummyUsers[0].id"
+        [avatar]="dummyUsers[0].avatar"
+        [name]="dummyUsers[0].name"
+        (userSelected)="userSelected($event)"
+      ></app-user>
+    </li>
+    <li>
+      <app-user
+        [id]="dummyUsers[1].id"
+        [avatar]="dummyUsers[1].avatar"
+        [name]="dummyUsers[1].name"
+        (userSelected)="userSelected($event)"
+      ></app-user>
+    </li>
+    <li>
+      <app-user
+        [id]="dummyUsers[2].id"
+        [avatar]="dummyUsers[2].avatar"
+        [name]="dummyUsers[2].name"
+        (userSelected)="userSelected($event)"
+      ></app-user>
+    </li>
+    <li>
+      <app-user
+        [id]="dummyUsers[3].id"
+        [avatar]="dummyUsers[3].avatar"
+        [name]="dummyUsers[3].name"
+        (userSelected)="userSelected($event)"
+      ></app-user>
+    </li>
+  </ul>
 </main>
