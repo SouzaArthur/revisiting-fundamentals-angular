@@ -16,7 +16,7 @@ export class AppUser{
     @Input({required: true}) name!: string;
     @Input({required: true}) id!: string;
 
-    @Output() userSelected = new EventEmitter();
+    @Output() userSelected = new EventEmitter<string>();
 
     get userImagePath(){
         return 'assets/users/' + this.avatar
